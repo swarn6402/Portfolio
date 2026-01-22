@@ -1,0 +1,347 @@
+/* Portfolio-specific custom properties and utilities */
+
+/* Light Mode (Default) */
+:root {
+    /* Core Colors */
+    --portfolio-bg: #faf8f5;
+    --portfolio-bg-secondary: #ffffff;
+    --portfolio-bg-card: #faf8f5;
+    --portfolio-text: #2d3436;
+    --portfolio-text-secondary: rgba(45, 52, 54, 0.7);
+    --portfolio-text-muted: rgba(45, 52, 54, 0.5);
+    --portfolio-accent: #b8976a;
+    --portfolio-accent-hover: #a6865c;
+    --portfolio-border: rgba(45, 52, 54, 0.1);
+    --portfolio-border-hover: rgba(184, 151, 106, 0.3);
+    --portfolio-divider: rgba(45, 52, 54, 0.2);
+    
+    /* Specific Elements */
+    --portfolio-nav-bg: rgba(250, 248, 245, 0.95);
+    --portfolio-card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --portfolio-card-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --portfolio-footer-bg: #2d3436;
+    --portfolio-footer-text: rgba(250, 248, 245, 0.8);
+    
+    /* Image adjustments */
+    --portfolio-image-brightness: 1;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    /* Core Colors */
+    --portfolio-bg: #0f1419;
+    --portfolio-bg-secondary: #1a1d23;
+    --portfolio-bg-card: #1e2329;
+    --portfolio-text: #e8e6e3;
+    --portfolio-text-secondary: #b8b5b2;
+    --portfolio-text-muted: rgba(184, 181, 178, 0.6);
+    --portfolio-accent: #d4af37;
+    --portfolio-accent-hover: #e8c468;
+    --portfolio-border: #2d3139;
+    --portfolio-border-hover: rgba(212, 175, 55, 0.4);
+    --portfolio-divider: #3a3d45;
+    
+    /* Specific Elements */
+    --portfolio-nav-bg: rgba(15, 20, 25, 0.95);
+    --portfolio-card-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --portfolio-card-shadow-hover: 0 0 30px rgba(212, 175, 55, 0.1);
+    --portfolio-footer-bg: #0a0d10;
+    --portfolio-footer-text: rgba(232, 230, 227, 0.8);
+    
+    /* Image adjustments */
+    --portfolio-image-brightness: 0.9;
+}
+
+/* Tailwind theme integration */
+@theme inline {
+    /* Editorial Color Palette - Dynamic */
+    --color-cream: var(--portfolio-bg);
+    --color-charcoal: var(--portfolio-text);
+    --color-bronze: var(--portfolio-accent);
+    
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global transition for theme switching */
+html,
+html *,
+html *::before,
+html *::after {
+    transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Disable transitions on page load to prevent flash */
+html.no-transitions,
+html.no-transitions *,
+html.no-transitions *::before,
+html.no-transitions *::after {
+    transition: none !important;
+}
+
+/* Selection styling */
+::selection {
+    background-color: var(--portfolio-accent);
+    color: var(--portfolio-bg);
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--portfolio-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--portfolio-text-muted);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--portfolio-accent);
+}
+
+/* Image brightness adjustment for dark mode */
+[data-theme="dark"] img {
+    filter: brightness(var(--portfolio-image-brightness));
+}
+
+/* Focus indicators for both modes */
+:focus-visible {
+    outline: 2px solid var(--portfolio-accent);
+    outline-offset: 2px;
+}
+
+/* Dark mode specific adjustments */
+[data-theme="dark"] .bg-cream {
+    background-color: var(--portfolio-bg) !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: var(--portfolio-bg-secondary) !important;
+}
+
+[data-theme="dark"] .text-charcoal {
+    color: var(--portfolio-text) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/70 {
+    color: var(--portfolio-text-secondary) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/60 {
+    color: var(--portfolio-text-secondary) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/50 {
+    color: var(--portfolio-text-muted) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/40 {
+    color: var(--portfolio-text-muted) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/80 {
+    color: rgba(232, 230, 227, 0.85) !important;
+}
+
+[data-theme="dark"] .text-charcoal\/20 {
+    color: rgba(232, 230, 227, 0.2) !important;
+}
+
+[data-theme="dark"] .text-bronze {
+    color: var(--portfolio-accent) !important;
+}
+
+[data-theme="dark"] .text-bronze\/70 {
+    color: rgba(212, 175, 55, 0.7) !important;
+}
+
+[data-theme="dark"] .text-bronze\/50 {
+    color: rgba(212, 175, 55, 0.5) !important;
+}
+
+[data-theme="dark"] .bg-bronze {
+    background-color: var(--portfolio-accent) !important;
+}
+
+[data-theme="dark"] .bg-bronze\/50 {
+    background-color: rgba(212, 175, 55, 0.5) !important;
+}
+
+[data-theme="dark"] .bg-cream\/50 {
+    background-color: rgba(30, 35, 41, 0.5) !important;
+}
+
+[data-theme="dark"] .bg-cream\/95 {
+    background-color: var(--portfolio-nav-bg) !important;
+}
+
+[data-theme="dark"] .border-charcoal\/5 {
+    border-color: var(--portfolio-border) !important;
+}
+
+[data-theme="dark"] .border-charcoal\/10 {
+    border-color: var(--portfolio-border) !important;
+}
+
+[data-theme="dark"] .border-charcoal\/20 {
+    border-color: var(--portfolio-divider) !important;
+}
+
+[data-theme="dark"] .border-bronze\/30 {
+    border-color: var(--portfolio-border-hover) !important;
+}
+
+[data-theme="dark"] .hover\:border-bronze\/30:hover {
+    border-color: var(--portfolio-border-hover) !important;
+}
+
+/* Card hover effects in dark mode */
+[data-theme="dark"] .group:hover {
+    box-shadow: var(--portfolio-card-shadow-hover);
+}
+
+/* Footer dark mode */
+[data-theme="dark"] .bg-charcoal {
+    background-color: var(--portfolio-footer-bg) !important;
+}
+
+[data-theme="dark"] .text-cream {
+    color: var(--portfolio-text) !important;
+}
+
+[data-theme="dark"] .text-cream\/80 {
+    color: var(--portfolio-footer-text) !important;
+}
+
+[data-theme="dark"] .text-cream\/60 {
+    color: rgba(232, 230, 227, 0.6) !important;
+}
+
+[data-theme="dark"] .text-cream\/50 {
+    color: rgba(232, 230, 227, 0.5) !important;
+}
+
+[data-theme="dark"] .text-cream\/40 {
+    color: rgba(232, 230, 227, 0.4) !important;
+}
+
+[data-theme="dark"] .text-cream\/20 {
+    color: rgba(232, 230, 227, 0.2) !important;
+}
+
+[data-theme="dark"] .text-cream\/10 {
+    color: rgba(232, 230, 227, 0.1) !important;
+}
+
+[data-theme="dark"] .border-cream {
+    border-color: var(--portfolio-text) !important;
+}
+
+[data-theme="dark"] .border-cream\/20 {
+    border-color: rgba(232, 230, 227, 0.2) !important;
+}
+
+[data-theme="dark"] .border-cream\/10 {
+    border-color: rgba(232, 230, 227, 0.1) !important;
+}
+
+[data-theme="dark"] .hover\:border-bronze:hover {
+    border-color: var(--portfolio-accent) !important;
+}
+
+[data-theme="dark"] .hover\:text-bronze:hover {
+    color: var(--portfolio-accent-hover) !important;
+}
+
+/* Code/monospace elements in dark mode */
+[data-theme="dark"] .font-mono {
+    background-color: rgba(45, 49, 57, 0.5);
+}
+
+/* Hero gradient overlay for dark mode depth */
+[data-theme="dark"] #hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center top, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Timeline line in dark mode */
+[data-theme="dark"] .absolute.w-px.bg-charcoal\/10 {
+    background-color: var(--portfolio-divider) !important;
+}
+
+/* Skill card hover glow in dark mode */
+[data-theme="dark"] .group.bg-white:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.08);
+    border-color: var(--portfolio-border-hover) !important;
+}
+
+/* Project card accent border on hover in dark mode */
+[data-theme="dark"] article.group:hover {
+    border-color: var(--portfolio-accent) !important;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
+}
+
+/* Mobile menu dark mode */
+[data-theme="dark"] .bg-cream.shadow-xl {
+    background-color: var(--portfolio-bg-secondary) !important;
+}
+
+/* Nav shadow in dark mode */
+[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure proper contrast for accessibility */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: var(--portfolio-text);
+}
+
+/* Backdrop blur adjustment for dark mode */
+[data-theme="dark"] .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+}
+
+/* Screen reader only utility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Theme toggle button specific styles */
+[data-theme="dark"] .theme-toggle-btn {
+    background-color: var(--portfolio-bg-card);
+    border-color: var(--portfolio-border);
+}
+
+[data-theme="dark"] .theme-toggle-btn:hover {
+    border-color: var(--portfolio-accent);
+    background-color: var(--portfolio-bg-secondary);
+}
