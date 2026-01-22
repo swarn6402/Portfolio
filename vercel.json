@@ -1,4 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".vinxi/build/client"
+  "outputDirectory": ".vinxi/build/client",
+  "framework": null
 }
