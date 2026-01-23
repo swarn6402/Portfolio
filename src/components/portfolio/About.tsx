@@ -50,13 +50,14 @@ export function About() {
                   fundamentals and practical AI development.
                 </p>
                 <p>
-                  I build full-stack web applications and backend systems using
-                  React, Next.js, Node.js, and modern databases. Backed by
-                  strong fundamentals in data structures and algorithms, I work
-                  on scalable software solutions and applied AI/GenAI features.
-                  I've contributed to production-grade systems, improved
-                  performance by 40%, and developed autonomous embedded projects
-                  from the ground up.
+                  I build backend and full-stack web applications using React,
+                  Next.js, Node.js and modern databases. My work is grounded in
+                  data structures, algorithms, and practical AI/GenAI features.
+                  <br />
+                  <br />
+                  I've shipped production-grade systems, optimized performance
+                  by 40%, and developed autonomous embedded projects from the
+                  ground up.
                 </p>
               </div>
 
@@ -80,7 +81,7 @@ export function About() {
                 </div>
                 <div>
                   <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
-                    Full-Stack & AI
+                    Full-Stack
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
                     Development Focus
