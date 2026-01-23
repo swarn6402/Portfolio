@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react'
 import {
   Phone,
   Mail,
-  X as XIcon,
   Github,
   Linkedin,
   Menu,
   X,
 } from 'lucide-react'
+import { FaXTwitter } from 'react-icons/fa6'
 import { motion, AnimatePresence } from 'motion/react'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -26,7 +26,7 @@ const contactLinks = [
     label: 'swarnjeettiwary01@gmail.com',
     href: 'mailto:swarnjeettiwary01@gmail.com',
   },
-  { icon: XIcon, label: 'swarn6402', href: 'https://x.com/swarn6402' },
+  { icon: FaXTwitter, label: 'swarn6402', href: 'https://x.com/swarn6402' },
   { icon: Github, label: 'swarn6402', href: 'https://github.com/swarn6402' },
   {
     icon: Linkedin,
