@@ -1,5 +1,13 @@
 import { useState, useEffect } from 'react'
-import { Phone, Mail, Globe, Github, Linkedin, Menu, X } from 'lucide-react'
+import {
+  Phone,
+  Mail,
+  X as XIcon,
+  Github,
+  Linkedin,
+  Menu,
+  X,
+} from 'lucide-react'
 import { motion, AnimatePresence } from 'motion/react'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -18,7 +26,7 @@ const contactLinks = [
     label: 'swarnjeettiwary01@gmail.com',
     href: 'mailto:swarnjeettiwary01@gmail.com',
   },
-  { icon: Globe, label: 'Portfolio', href: '#' },
+  { icon: XIcon, label: 'swarn6402', href: 'https://x.com/swarn6402' },
   { icon: Github, label: 'swarn6402', href: 'https://github.com/swarn6402' },
   {
     icon: Linkedin,
@@ -185,7 +193,7 @@ export function Header() {
 
             {/* Subtitle */}
             <p className="font-sans text-lg md:text-xl text-charcoal/60 font-light tracking-wide mb-12">
-              Full-Stack Developer & Electronics Engineer
+              Software Engineer · Backend & AI
             </p>
 
             {/* Decorative Divider */}
