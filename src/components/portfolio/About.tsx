@@ -32,8 +32,8 @@ export function About() {
             <div className="md:col-span-4">
               <div className="border-l-2 border-bronze/30 pl-6">
                 <p className="font-serif text-xl md:text-2xl text-charcoal/80 italic leading-relaxed">
-                  "Building bridges between hardware and software, one line of
-                  code at a time."
+                  "Engineering scalable software with strong algorithmic
+                  foundations and applied AI."
                 </p>
               </div>
             </div>
@@ -44,39 +44,24 @@ export function About() {
                 <p className="text-lg">
                   I'm a{' '}
                   <span className="text-charcoal font-medium">
-                    Full-Stack Developer
+                    Full-Stack Engineer
                   </span>{' '}
-                  and Electronics & Communications Engineering student with a
-                  passion for creating innovative digital solutions that merge
-                  software excellence with hardware understanding.
+                  focused on building performant systems, backed by strong DSA
+                  fundamentals and practical AI development.
                 </p>
                 <p>
-                  My expertise spans modern web technologies—React, Next.js,
-                  Node.js—combined with hands-on experience in drone technology
-                  and embedded systems. This unique intersection allows me to
-                  approach problems from multiple angles, delivering solutions
-                  that are both technically robust and user-centric.
-                </p>
-                <p>
-                  Currently pursuing my B.Tech at Techno International New Town,
-                  Kolkata, I've contributed to production-grade applications,
-                  improved website performance by 40%, and built autonomous
-                  systems from the ground up. I believe in writing clean,
-                  maintainable code and creating experiences that make a
-                  difference.
+                  I build full-stack web applications and backend systems using
+                  React, Next.js, Node.js, and modern databases. Backed by
+                  strong fundamentals in data structures and algorithms, I work
+                  on scalable software solutions and applied AI/GenAI features.
+                  I've contributed to production-grade systems, improved
+                  performance by 40%, and developed autonomous embedded projects
+                  from the ground up.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-charcoal/10">
-                <div>
-                  <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
-                    2+
-                  </span>
-                  <p className="text-sm text-charcoal/50 mt-1 font-sans">
-                    Years Experience
-                  </p>
-                </div>
                 <div>
                   <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
                     10+
@@ -90,7 +75,15 @@ export function About() {
                     40%
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
-                    Performance Boost
+                    Performance Optimization
+                  </p>
+                </div>
+                <div>
+                  <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
+                    Full-Stack & AI
+                  </span>
+                  <p className="text-sm text-charcoal/50 mt-1 font-sans">
+                    Development Focus
                   </p>
                 </div>
               </div>
