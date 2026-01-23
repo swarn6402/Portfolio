@@ -16,16 +16,16 @@ const projects = [
     description:
       'A Chrome extension that transforms the new tab page into a visual countdown timer for tracking lifespan and important events. Features an interactive grid-based interface with real-time updates.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs'],
-    link: '#',
-    github: 'https://github.com/swarn6402',
+    link: 'https://github.com/swarn6402/KarmaChronos',
+    github: 'https://github.com/swarn6402/KarmaChronos',
   },
   {
     title: 'Interactive Portfolio Website',
     description:
       'Responsive portfolio website featuring a dynamic project gallery, smooth scrolling navigation, and optimized performance. Achieved 95+ Google Lighthouse score across all metrics.',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    link: '#',
-    github: 'https://github.com/swarn6402',
+    link: 'https://portfolio-alpha-vert-65.vercel.app/',
+    github: 'https://github.com/swarn6402/Portfolio',
   },
 ]
 
