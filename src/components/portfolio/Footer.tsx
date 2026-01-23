@@ -26,7 +26,7 @@ export function Footer() {
 
           {/* Tagline */}
           <p className="font-sans text-cream/50 text-sm mb-8">
-            Full-Stack Developer & Electronics Engineer
+            Software Engineer | Backend & AI Systems
           </p>
 
           {/* Decorative Line */}
