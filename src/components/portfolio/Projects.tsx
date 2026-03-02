@@ -5,10 +5,12 @@ import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Autonomous Quadcopter Drone',
+    title: 'Saspirant– Smart Job Alert Platform',
     description:
-      'High-speed autonomous drone featuring custom hardware design and computer vision capabilities for real-time obstacle detection and navigation. Built from the ground up with a focus on reliability and performance.',
-    tech: ['Python', 'OpenCV', 'ROS', 'GPS', 'IMU Sensors', 'Machine Learning'],
+      'Full-stack job alert platform leveraging React/Flask/PostgreSQL with Google OAuth, automated scraping from 50+ recruitment sites using BeautifulSoup4/Selenium, and AI-powered job matching with personalized email notifications via SendGrid.',
+    tech: ['React', 'Flask', 'PostgreSQL', 'Google OAuth', 'BeautifulSoup4', 'Selenium', 'SendGrid', 'Vercel', 'Render'],
+    link: 'https://saspirant.vercel.app/',
+    github: 'https://github.com/swarn6402/Saspirant',
     featured: true,
   },
   {
@@ -20,12 +22,12 @@ const projects = [
     github: 'https://github.com/swarn6402/KarmaChronos',
   },
   {
-    title: 'Interactive Portfolio Website',
+    title: 'SwarnSports– Cricket Streaming Link Aggregator',
     description:
-      'Responsive portfolio website featuring a dynamic project gallery, smooth scrolling navigation, and optimized performance. Achieved 95+ Google Lighthouse score across all metrics.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    link: 'https://portfolio-alpha-vert-65.vercel.app/',
-    github: 'https://github.com/swarn6402/Portfolio',
+      'Automated cricket streaming link aggregator using Python (Telethon API, asyncio) and JavaScript with regex filtering and CI/CD deployment on GitHub Pages.',
+    tech: ['Python', 'Telethon API', 'JavaScript', 'GitHub Pages'],
+    link: 'https://swarn6402.github.io/SwarnSportsHD/',
+    github: 'https://github.com/swarn6402/SwarnSportsHD',
   },
 ]
 
