@@ -77,7 +77,7 @@ export function Skills() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group bg-white border border-charcoal/5 p-6 hover:border-bronze/30 transition-all duration-300"
+                className="group bg-white border border-charcoal/5 border-l-2 border-l-bronze p-8 hover:border-bronze/30 hover:border-l-bronze transition-all duration-300"
               >
                 {/* Icon */}
                 <div className="w-12 h-12 flex items-center justify-center bg-cream border border-charcoal/10 mb-6 group-hover:border-bronze/30 transition-colors">
@@ -89,18 +89,17 @@ export function Skills() {
                   {category.title}
                 </h3>
 
-                {/* Skills List */}
-                <ul className="space-y-2">
+                {/* Skills chips */}
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <li
+                    <span
                       key={skill}
-                      className="text-sm font-sans text-charcoal/60 flex items-center gap-2"
+                      className="text-xs font-mono text-charcoal/60 bg-cream border border-charcoal/10 px-3 py-1"
                     >
-                      <span className="w-1 h-1 rounded-full bg-bronze/50" />
                       {skill}
-                    </li>
+                    </span>
                   ))}
-                </ul>
+                </div>
               </motion.div>
             ))}
           </div>
