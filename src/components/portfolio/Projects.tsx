@@ -5,6 +5,15 @@ import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
+    title: 'FreeFA – FIFA World Cup 2026 Match Hub',
+    description:
+      'Full-stack World Cup 2026 platform with live match pages, standings, schedules, and real-time data integrations. Engineered an automated Telegram-based stream discovery pipeline using GramJS with CI/CD deployment, reaching 10,000+ visitors across 40+ countries.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
+    link: 'https://freefifa.vercel.app/',
+    github: 'https://github.com/swarn6402/freefa',
+    featured: true,
+  },
+  {
     title: 'Saspirant– Smart Job Alert Platform',
     description:
       'Full-stack job alert platform leveraging React/Flask/PostgreSQL with Google OAuth, automated scraping from 50+ recruitment sites using BeautifulSoup4/Selenium, and AI-powered job matching with personalized email notifications via SendGrid.',
@@ -28,6 +37,13 @@ const projects = [
     tech: ['Python', 'Telethon API', 'JavaScript', 'GitHub Pages'],
     link: 'https://swarn6402.github.io/SwarnSportsHD/',
     github: 'https://github.com/swarn6402/SwarnSportsHD',
+  },
+  {
+    title: 'KarmaYogi – Focus & Productivity Chrome Extension',
+    description:
+      'Chrome extension (Manifest V3) with distraction blocking, analytics tracking, and audio signal generation via Web Audio API. Optimized performance bottlenecks in client-side execution and event-driven workflows.',
+    tech: ['Chrome Extension', 'Manifest V3', 'Web Audio API', 'JavaScript'],
+    github: 'https://github.com/swarn6402/karmayogi',
   },
 ]
 
