@@ -62,25 +62,25 @@ export function About() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-charcoal/10">
-                <div>
-                  <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
+              <div className="flex gap-4 sm:gap-8 mt-12 pt-8 border-t border-charcoal/10">
+                <div className="flex-1 min-w-0">
+                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     10+
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
                     Projects Built
                   </p>
                 </div>
-                <div>
-                  <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
+                <div className="flex-1 min-w-0">
+                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     40%
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
                     Performance Optimization
                   </p>
                 </div>
-                <div>
-                  <span className="font-serif text-3xl md:text-4xl text-charcoal font-semibold">
+                <div className="flex-1 min-w-0">
+                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     Full-Stack
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
