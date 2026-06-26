@@ -185,11 +185,22 @@ export function Header() {
             </div>
 
             {/* Name */}
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-wide leading-tight mb-6">
-              SWARNJEET NATH
-              <br />
-              <span className="text-charcoal/80">TIWARY</span>
-            </h1>
+            <div className="relative mb-6">
+              {/* Faint radial gold glow behind the name */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[180%] -z-0"
+                style={{
+                  background:
+                    'radial-gradient(ellipse at center, rgba(184,151,106,0.18) 0%, transparent 65%)',
+                }}
+              />
+              <h1 className="relative z-10 font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
+                SWARNJEET NATH
+                <br />
+                <span className="text-charcoal/80">TIWARY</span>
+              </h1>
+            </div>
 
             {/* Subtitle */}
             <p className="font-sans text-lg md:text-xl text-charcoal/60 font-light tracking-wide mb-12">
