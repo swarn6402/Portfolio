@@ -74,19 +74,19 @@ export function Experience() {
                   <div className="absolute left-0 md:left-8 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-bronze border-4 border-cream" />
 
                   {/* Content */}
-                  <div className="bg-cream/50 p-6 md:p-8 border border-charcoal/5">
+                  <div className="bg-cream/50 p-6 md:p-8 border border-charcoal/5 border-l-2 border-l-bronze">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                       <div>
-                        <h3 className="font-serif text-xl md:text-2xl font-semibold text-charcoal mb-1">
+                        <h3 className="font-serif text-2xl md:text-3xl font-bold text-charcoal mb-1">
                           {exp.company}
                         </h3>
-                        <p className="font-sans text-charcoal/70">
+                        <p className="font-sans text-sm text-charcoal/50">
                           {exp.role}
                           <span className="text-bronze mx-2">·</span>
-                          <span className="text-charcoal/50">{exp.type}</span>
+                          <span>{exp.type}</span>
                         </p>
                       </div>
-                      <div className="flex flex-col items-start md:items-end gap-1 text-sm font-sans text-charcoal/50">
+                      <div className="flex flex-row flex-wrap items-center gap-x-4 gap-y-1 text-sm font-sans text-charcoal/50">
                         <span className="flex items-center gap-2">
                           <Calendar size={14} className="text-bronze/70" />
                           {exp.period}
