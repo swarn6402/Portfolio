@@ -79,21 +79,19 @@ export function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`group relative bg-cream border border-charcoal/5 p-6 md:p-8 transition-all duration-300 hover:border-bronze/30 hover:shadow-lg hover:-translate-y-0.5 ${
+                className={`group relative overflow-hidden bg-cream border border-charcoal/5 p-6 md:p-8 transition-all duration-300 hover:border-bronze/30 hover:shadow-lg hover:-translate-y-0.5 ${
                   project.featured ? 'md:p-10' : ''
                 }`}
               >
-                {/* Featured Badge */}
-                {project.featured && (
-                  <div className="absolute top-6 right-6 md:top-10 md:right-10">
-                    <span className="text-xs font-sans text-bronze uppercase tracking-widest border border-bronze/30 px-3 py-1">
-                      Featured
-                    </span>
-                  </div>
-                )}
-
                 {/* Content */}
                 <div className="max-w-3xl">
+                  {/* Featured Badge */}
+                  {project.featured && (
+                    <span className="inline-block text-xs font-sans text-bronze uppercase tracking-widest border border-bronze/30 px-3 py-1 mb-4">
+                      Featured
+                    </span>
+                  )}
+
                   <h3 className="font-serif text-xl md:text-2xl font-semibold text-charcoal mb-4 group-hover:text-bronze transition-colors">
                     {project.title}
                   </h3>
