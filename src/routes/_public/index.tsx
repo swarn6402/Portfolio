@@ -16,7 +16,7 @@ export const Route = createFileRoute('/_public/')({
 
 function Portfolio() {
   return (
-    <main className="min-h-screen bg-cream">
+    <main className="min-h-screen bg-cream overflow-x-hidden">
       <Header />
       <About />
       <Experience />
