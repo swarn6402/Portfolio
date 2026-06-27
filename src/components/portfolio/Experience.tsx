@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { useInView } from 'motion/react'
+import { useInView, useReducedMotion } from 'motion/react'
 import { useRef } from 'react'
 import { MapPin, Calendar } from 'lucide-react'
 
@@ -32,6 +32,7 @@ const experiences = [
 export function Experience() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const shouldReduceMotion = useReducedMotion()
 
   return (
     <section id="experience" className="py-24 md:py-32 bg-white">
@@ -50,7 +51,15 @@ export function Experience() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Experience
             </h2>
-            <div className="w-16 h-px bg-bronze" />
+            <motion.div
+              className="h-px bg-bronze"
+              initial={shouldReduceMotion ? false : { width: 0 }}
+              animate={{ width: isInView || shouldReduceMotion ? 64 : 0 }}
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.6,
+                ease: 'easeOut',
+              }}
+            />
           </div>
 
           {/* Timeline */}
