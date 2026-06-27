@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'FreeFA – FIFA World Cup 2026 Match Hub',
     description:
-      'Full-stack World Cup 2026 platform with live match pages, standings, schedules, and real-time data integrations. Engineered an automated Telegram-based stream discovery pipeline using GramJS with CI/CD deployment, reaching 10,000+ visitors across 40+ countries.',
+      'Built a full-stack World Cup 2026 hub with live match data, standings, and real-time scores. The interesting part: an automated Telegram pipeline using GramJS that discovers and surfaces stream links without manual curation. Reached 10,000 visitors across 40+ countries organically.',
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     link: 'https://freefifa.vercel.app/',
     github: 'https://github.com/swarn6402/freefa',
@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Saspirant– Smart Job Alert Platform',
     description:
-      'Full-stack job alert platform leveraging React/Flask/PostgreSQL with Google OAuth, automated scraping from 50+ recruitment sites using BeautifulSoup4/Selenium, and AI-powered job matching with personalized email notifications via SendGrid.',
+      'Job hunting is tedious. This platform automates the tedious part. Scrapes 50+ recruitment sites with BeautifulSoup4 and Selenium, matches listings to your profile with AI, and sends personalized alerts via email. Full-stack: React frontend, Flask API, PostgreSQL, deployed on Vercel and Render.',
     tech: ['React', 'Flask', 'PostgreSQL', 'Google OAuth', 'BeautifulSoup4', 'Selenium', 'SendGrid', 'Vercel', 'Render'],
     link: 'https://saspirant.vercel.app/',
     github: 'https://github.com/swarn6402/Saspirant',
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'KarmaChronos Chrome Extension',
     description:
-      'A Chrome extension that transforms the new tab page into a visual countdown timer for tracking lifespan and important events. Features an interactive grid-based interface with real-time updates.',
+      "A Chrome extension that turns your new tab into a lifespan countdown. Sounds morbid. Turns out it's clarifying. Grid-based interface, real-time updates, no dependencies.",
     tech: ['HTML', 'CSS', 'JavaScript', 'Chrome APIs'],
     link: 'https://github.com/swarn6402/KarmaChronos',
     github: 'https://github.com/swarn6402/KarmaChronos',
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'SwarnSports– Cricket Streaming Link Aggregator',
     description:
-      'Automated cricket streaming link aggregator using Python (Telethon API, asyncio) and JavaScript with regex filtering and CI/CD deployment on GitHub Pages.',
+      'Automated aggregator for cricket streaming links. Python handles the Telegram scraping via Telethon, regex filters the noise, and the whole thing deploys via CI/CD to GitHub Pages. Set it and forget it.',
     tech: ['Python', 'Telethon API', 'JavaScript', 'GitHub Pages'],
     link: 'https://swarn6402.github.io/SwarnSportsHD/',
     github: 'https://github.com/swarn6402/SwarnSportsHD',
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'KarmaYogi – Focus & Productivity Chrome Extension',
     description:
-      'Chrome extension (Manifest V3) with distraction blocking, analytics tracking, and audio signal generation via Web Audio API. Optimized performance bottlenecks in client-side execution and event-driven workflows.',
+      'Distraction blocker and focus tracker as a Chrome extension. Manifest V3, Web Audio API for audio cues, analytics built in. The performance work here was the interesting part: client-side event-driven code has more bottlenecks than people expect.',
     tech: ['Chrome Extension', 'Manifest V3', 'Web Audio API', 'JavaScript'],
     github: 'https://github.com/swarn6402/karmayogi',
   },
