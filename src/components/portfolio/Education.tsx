@@ -15,7 +15,7 @@ export function Education() {
       period: 'August 2021 - July 2025',
       location: 'Kolkata, India',
       description:
-        'Graduated with a strong foundation in Computer Science, electronics and embedded systems, complemented by self-driven expertise in full-stack development, backend systems, and applied AI.',
+        'The coursework gave me electronics and embedded systems. Everything else I built on the side.',
     },
     {
       icon: BookOpen,
@@ -24,7 +24,7 @@ export function Education() {
       period: 'Completed 2020',
       location: 'Patna, India',
       description:
-        'Completed secondary education with a focus on sciences and mathematics, sports and extra-curricular activities building a strong analytical foundation.',
+        'ICSE, 2020. Sciences, mathematics, and enough sport to know how to lose and keep going.',
     },
   ]
 
