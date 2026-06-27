@@ -204,7 +204,7 @@ export function Header() {
 
             {/* Subtitle */}
             <p className="font-sans text-lg md:text-xl text-charcoal/60 font-light tracking-wide mb-12">
-              Software Engineer · Backend & AI
+              Backend & AI Engineer. I build things that hold up.
             </p>
 
             {/* Decorative Divider */}
