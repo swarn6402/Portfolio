@@ -1,5 +1,6 @@
 export { Header } from './Header'
 export { About } from './About'
+export { NowPlaying } from './NowPlaying'
 export { Experience } from './Experience'
 export { Skills } from './Skills'
 export { Projects } from './Projects'
