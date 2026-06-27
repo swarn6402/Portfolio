@@ -32,8 +32,7 @@ export function About() {
             <div className="md:col-span-4">
               <div className="border-l-2 border-bronze/30 pl-6">
                 <p className="font-serif text-xl md:text-2xl text-charcoal/80 italic leading-relaxed">
-                  "Engineering scalable software with strong algorithmic
-                  foundations and applied AI."
+                  "I care about what happens after the code ships."
                 </p>
               </div>
             </div>
@@ -44,20 +43,18 @@ export function About() {
                 <p className="text-lg">
                   I'm a{' '}
                   <span className="text-charcoal font-medium">
-                    Full-Stack Engineer
+                    backend-leaning full-stack engineer
                   </span>{' '}
-                  focused on building performant systems, backed by strong DSA
-                  fundamentals and practical AI development.
+                  who thinks in systems. Most of my work lives at the
+                  intersection of clean architecture, real-world constraints,
+                  and occasionally shipping something people actually use.
                 </p>
                 <p>
-                  I build backend and full-stack web applications using React,
-                  Next.js, Node.js and modern databases. My work is grounded in
-                  data structures, algorithms, and practical AI/GenAI features.
-                  <br />
-                  <br />
-                  I've shipped production-grade systems, optimized performance
-                  by 40%, and developed autonomous embedded projects from the
-                  ground up.
+                  I've built job alert platforms that scrape 50+ sites, stream
+                  discovery pipelines that reached 10,000 visitors across 40
+                  countries, and embedded drone systems from scratch. Strong DSA
+                  fundamentals, practical AI integration, and a habit of not
+                  leaving performance problems for later.
                 </p>
               </div>
 
@@ -68,7 +65,7 @@ export function About() {
                     10+
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
-                    Projects Built
+                    Things shipped
                   </p>
                 </div>
                 <div className="flex-1 min-w-0">
@@ -76,15 +73,15 @@ export function About() {
                     40%
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
-                    Performance Optimization
+                    Faster, measurably
                   </p>
                 </div>
                 <div className="flex-1 min-w-0">
                   <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
-                    Full-Stack
+                    Both
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
-                    Development Focus
+                    Frontend and back
                   </p>
                 </div>
               </div>
