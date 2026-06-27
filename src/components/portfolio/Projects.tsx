@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { useInView } from 'motion/react'
+import { useInView, useReducedMotion } from 'motion/react'
 import { useRef } from 'react'
 import { ExternalLink, Github } from 'lucide-react'
 
@@ -50,6 +50,7 @@ const projects = [
 export function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const shouldReduceMotion = useReducedMotion()
 
   return (
     <section id="projects" className="py-24 md:py-32 bg-white">
@@ -68,7 +69,15 @@ export function Projects() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Featured Projects
             </h2>
-            <div className="w-16 h-px bg-bronze" />
+            <motion.div
+              className="h-px bg-bronze"
+              initial={shouldReduceMotion ? false : { width: 0 }}
+              animate={{ width: isInView || shouldReduceMotion ? 64 : 0 }}
+              transition={{
+                duration: shouldReduceMotion ? 0 : 0.6,
+                ease: 'easeOut',
+              }}
+            />
           </div>
 
           {/* Projects Grid */}
@@ -79,7 +88,19 @@ export function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`group relative overflow-hidden bg-cream border border-charcoal/5 p-6 md:p-8 transition-all duration-300 hover:border-bronze/30 hover:shadow-lg hover:-translate-y-0.5 ${
+                whileHover={
+                  shouldReduceMotion
+                    ? undefined
+                    : {
+                        rotateX: 2,
+                        rotateY: -1,
+                        scale: 1.01,
+                        translateY: -2,
+                        transition: { duration: 0.2 },
+                      }
+                }
+                style={{ transformPerspective: 1000 }}
+                className={`group relative overflow-hidden bg-cream border border-charcoal/5 p-6 md:p-8 transition-[border-color,box-shadow] duration-300 hover:border-bronze/30 hover:shadow-lg ${
                   project.featured ? 'md:p-10' : ''
                 }`}
               >
