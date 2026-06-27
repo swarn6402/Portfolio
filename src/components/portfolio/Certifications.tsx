@@ -78,17 +78,6 @@ export function Certifications() {
               </motion.div>
             ))}
           </div>
-
-          {/* Additional Note */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-center text-sm font-sans text-charcoal/40 mt-12"
-          >
-            Continuously learning and expanding expertise in emerging
-            technologies
-          </motion.p>
         </motion.div>
       </div>
     </section>
