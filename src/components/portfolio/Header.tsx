@@ -8,7 +8,7 @@ import {
   X,
 } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
-import { motion, AnimatePresence } from 'motion/react'
+import { motion, AnimatePresence, useReducedMotion } from 'motion/react'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
@@ -36,6 +36,7 @@ const contactLinks = [
 ]
 
 export function Header() {
+  const shouldReduceMotion = useReducedMotion()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -196,9 +197,26 @@ export function Header() {
                 }}
               />
               <h1 className="relative z-10 font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
-                SWARNJEET NATH
-                <br />
-                <span className="text-charcoal/80">TIWARY</span>
+                {['SWARNJEET', 'NATH', 'TIWARY'].map((word, i) => (
+                  <span key={word}>
+                    {i === 2 && <br />}
+                    <motion.span
+                      className={`inline-block ${i === 2 ? 'text-charcoal/80' : ''}`}
+                      initial={
+                        shouldReduceMotion ? false : { opacity: 0, y: 20 }
+                      }
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={
+                        shouldReduceMotion
+                          ? { duration: 0 }
+                          : { duration: 0.6, ease: 'easeOut', delay: i * 0.15 }
+                      }
+                    >
+                      {word}
+                    </motion.span>
+                    {i < 2 && ' '}
+                  </span>
+                ))}
               </h1>
             </div>
 
