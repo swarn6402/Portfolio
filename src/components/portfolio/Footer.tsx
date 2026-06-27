@@ -1,4 +1,6 @@
 import { Phone, Mail, Github, Linkedin, Heart } from 'lucide-react'
+import { motion, useInView, useReducedMotion } from 'motion/react'
+import { useRef } from 'react'
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/swarn6402', label: 'GitHub' },
@@ -13,12 +15,24 @@ const socialLinks = [
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const shouldReduceMotion = useReducedMotion()
 
   return (
     <footer className="bg-charcoal text-cream/80">
       {/* Main Footer */}
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="text-center">
+        <motion.div
+          ref={ref}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{
+            duration: shouldReduceMotion ? 0 : 0.5,
+            ease: 'easeOut',
+          }}
+          className="text-center"
+        >
           {/* Name */}
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-cream mb-4">
             Swarnjeet Nath Tiwary
@@ -70,7 +84,7 @@ export function Footer() {
               </a>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Bottom Bar */}
