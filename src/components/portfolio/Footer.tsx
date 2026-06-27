@@ -79,7 +79,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-cream/40">
             <p>© {currentYear} Swarnjeet Nath Tiwary. All rights reserved.</p>
             <p className="flex items-center gap-1">
-              Built with passion and precision
+              Built by me, from scratch.
               <Heart size={12} className="text-bronze fill-bronze" />
             </p>
           </div>
