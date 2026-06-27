@@ -11,10 +11,9 @@ const experiences = [
     period: 'July 2023 - May 2024',
     location: 'Kolkata, IN',
     highlights: [
-      'Developed, maintained, and optimized company website ensuring high availability and performance',
-      'Implemented responsive design principles, improving load times by 40% and enhancing user experience across devices',
-      'Integrated new features and functionalities using React and Node.js, collaborating with cross-functional teams',
-      'Worked on cutting-edge web technologies to deliver scalable and maintainable solutions',
+      "Owned the company's primary web presence end-to-end, from feature development to reliability.",
+      'Cut page load times by 40% through targeted performance work, not just adding a CDN and calling it done.',
+      'Built and shipped new product features in React and Node.js, working directly with the founding team.',
     ],
   },
   {
@@ -24,9 +23,8 @@ const experiences = [
     period: 'May 2021 - July 2021',
     location: 'Patna, IN',
     highlights: [
-      'Produced clear, concise documentation for software products, improving user comprehension and adoption',
-      'Enhanced website traffic through strategic SEO implementation and content optimization',
-      'Collaborated with development teams to translate technical concepts into accessible content',
+      'Wrote technical documentation that developers and non-technical users could both actually read.',
+      'Improved organic traffic through content and SEO work, with measurable results in search rankings.',
     ],
   },
 ]
