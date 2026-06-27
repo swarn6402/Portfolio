@@ -8,6 +8,8 @@ import portfolioCss from '../components/portfolio/portfolio.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
 import { Toaster } from '@/components/ui/sonner'
+import { ScrollProgress } from '@/components/ui/ScrollProgress'
+import { CustomCursor } from '@/components/ui/CustomCursor'
 import { ThemeProvider } from 'next-themes'
 import { authMiddleware } from '@/server/functions/auth'
 
@@ -132,6 +134,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           enableSystem={false}
           disableTransitionOnChange
         >
+          <ScrollProgress />
+          <CustomCursor />
           {children}
           <Toaster />
         </ThemeProvider>
