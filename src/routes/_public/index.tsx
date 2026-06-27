@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import {
   Header,
   About,
+  NowPlaying,
   Experience,
   Skills,
   Projects,
@@ -19,6 +20,7 @@ function Portfolio() {
     <main className="min-h-screen bg-cream overflow-x-hidden">
       <Header />
       <About />
+      <NowPlaying />
       <Experience />
       <Skills />
       <Projects />
