@@ -58,11 +58,10 @@
     --color-cream: var(--portfolio-bg);
     --color-charcoal: var(--portfolio-text);
     --color-bronze: var(--portfolio-accent);
-    
-    /* Typography */
-    --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
-    --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
-    --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+    /* NOTE: Font families are defined in src/styles.css, not here. This file is
+       loaded as a standalone <link> without `@import 'tailwindcss'`, so its
+       `@theme` is never compiled — any font vars set here would be ignored. */
 }
 
 /* Smooth scrolling for the entire page */
