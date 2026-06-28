@@ -48,7 +48,7 @@ export function Experience() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Career
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Experience
             </h2>
             <motion.div
@@ -84,7 +84,7 @@ export function Experience() {
                   <div className="bg-cream/50 p-6 md:p-8 border border-charcoal/5 border-l-2 border-l-bronze">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                       <div>
-                        <h3 className="font-serif text-2xl md:text-3xl font-bold text-charcoal mb-1">
+                        <h3 className="font-sans text-2xl md:text-3xl font-bold text-charcoal mb-1">
                           {exp.company}
                         </h3>
                         <p className="font-sans text-sm text-charcoal/50">
