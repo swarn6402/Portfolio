@@ -196,7 +196,7 @@ export function Header() {
                     'radial-gradient(ellipse at center, rgba(184,151,106,0.18) 0%, transparent 65%)',
                 }}
               />
-              <h1 className="relative z-10 font-sans text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
+              <h1 className="relative z-10 font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
                 {['SWARNJEET', 'NATH', 'TIWARY'].map((word, i) => (
                   <span key={word}>
                     {i === 2 && <br />}
