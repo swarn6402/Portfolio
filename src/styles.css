@@ -4,6 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * Font theme — must live here (the file that `@import 'tailwindcss'`) so
+ * Tailwind actually compiles it. The matching block in portfolio.css is loaded
+ * as a standalone <link> with no Tailwind import, so its `@theme` is emitted
+ * raw and ignored by the browser. Defining the fonts here makes the
+ * `--font-sans/serif/mono` variables, the `.font-*` utilities, and the
+ * `body { font-family: var(--font-sans) }` rule all resolve to the real fonts.
+ */
+@theme {
+  --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+}
+
 body {
   @apply m-0;
   font-family: var(--font-sans);
