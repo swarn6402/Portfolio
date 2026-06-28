@@ -57,7 +57,7 @@ export function NowPlaying() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Listening
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               What's On
             </h2>
             <motion.div
@@ -92,7 +92,7 @@ export function NowPlaying() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-charcoal mb-2 group-hover:text-bronze transition-colors">
+                  <h3 className="font-sans text-xl md:text-2xl font-semibold text-charcoal mb-2 group-hover:text-bronze transition-colors">
                     {item.title}
                   </h3>
 
