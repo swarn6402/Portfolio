@@ -16,6 +16,8 @@
   --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
+  /* Signature display face — used only for the hero name (font-display). */
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
 }
 
 body {
