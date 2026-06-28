@@ -70,7 +70,7 @@ export function Header() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <button
             onClick={() => scrollToSection('#hero')}
-            className="font-serif text-lg font-semibold text-charcoal tracking-wide hover:text-bronze transition-colors"
+            className="font-sans text-lg font-semibold text-charcoal tracking-wide hover:text-bronze transition-colors"
           >
             SNT
           </button>
@@ -123,7 +123,7 @@ export function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
                     onClick={() => scrollToSection(link.href)}
-                    className="block text-lg font-serif text-charcoal hover:text-bronze transition-colors"
+                    className="block text-lg font-sans text-charcoal hover:text-bronze transition-colors"
                   >
                     {link.label}
                   </motion.button>
@@ -196,7 +196,7 @@ export function Header() {
                     'radial-gradient(ellipse at center, rgba(184,151,106,0.18) 0%, transparent 65%)',
                 }}
               />
-              <h1 className="relative z-10 font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
+              <h1 className="relative z-10 font-sans text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold text-charcoal tracking-tight md:tracking-wide leading-tight">
                 {['SWARNJEET', 'NATH', 'TIWARY'].map((word, i) => (
                   <span key={word}>
                     {i === 2 && <br />}
