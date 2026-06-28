@@ -64,7 +64,7 @@ export function Skills() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Expertise
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Technical Skills
             </h2>
             <motion.div
@@ -94,7 +94,7 @@ export function Skills() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-serif text-lg font-semibold text-charcoal mb-4">
+                <h3 className="font-sans text-lg font-semibold text-charcoal mb-4">
                   {category.title}
                 </h3>
 
