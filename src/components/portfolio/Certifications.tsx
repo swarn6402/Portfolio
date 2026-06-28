@@ -40,7 +40,7 @@ export function Certifications() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Credentials
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Certifications
             </h2>
             <motion.div
@@ -71,7 +71,7 @@ export function Certifications() {
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-serif text-lg font-semibold text-charcoal group-hover:text-bronze transition-colors truncate">
+                  <h3 className="font-sans text-lg font-semibold text-charcoal group-hover:text-bronze transition-colors truncate">
                     {cert.title}
                   </h3>
                   <p className="text-sm font-sans text-charcoal/50 mt-1">
