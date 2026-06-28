@@ -66,7 +66,7 @@ export function Projects() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Work
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Featured Projects
             </h2>
             <motion.div
@@ -113,7 +113,7 @@ export function Projects() {
                     </span>
                   )}
 
-                  <h3 className="font-serif text-xl md:text-2xl font-semibold text-charcoal mb-4 group-hover:text-bronze transition-colors">
+                  <h3 className="font-sans text-xl md:text-2xl font-semibold text-charcoal mb-4 group-hover:text-bronze transition-colors">
                     {project.title}
                   </h3>
 
