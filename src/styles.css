@@ -17,7 +17,7 @@
   --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
   /* Signature display face — used only for the hero name (font-display). */
-  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
 }
 
 body {
