@@ -34,7 +34,7 @@ export function Footer() {
           className="text-center"
         >
           {/* Name */}
-          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-cream mb-4">
+          <h2 className="font-sans text-2xl md:text-3xl font-semibold text-cream mb-4">
             Swarnjeet Nath Tiwary
           </h2>
 
