@@ -43,7 +43,7 @@ export function Education() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Academic
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               Education
             </h2>
             <motion.div
@@ -79,7 +79,7 @@ export function Education() {
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                         <div>
-                          <h3 className="font-serif text-xl md:text-2xl font-semibold text-charcoal mb-2">
+                          <h3 className="font-sans text-xl md:text-2xl font-semibold text-charcoal mb-2">
                             {item.institution}
                           </h3>
                           <p className="font-sans text-charcoal/70">
