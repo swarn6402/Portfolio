@@ -53,7 +53,7 @@ src/
 - **Light/dark theme** — driven by CSS variables with a no-flash inline bootstrap and persisted preference.
 - **Motion** — staggered hero reveal, scroll-triggered fade-ups, animated section dividers, and a subtle 3D tilt on project cards. All animations respect `prefers-reduced-motion`.
 - **Global UI details** — a scroll progress bar and a custom trailing cursor (desktop only, motion-aware).
-- **Typography** — Geist (sans), Geist Mono (mono), and Cormorant Garamond (serif), loaded via Google Fonts.
+- **Typography** — Geist (body/UI) and Geist Mono (code/tech chips) throughout, with Playfair Display reserved as the display face for the hero name. Loaded via Google Fonts.
 
 > **Fonts note:** Font families are defined in the `@theme` block of `src/styles.css` — the file that imports Tailwind. `portfolio.css` is loaded as a standalone stylesheet and its `@theme` is **not** compiled, so font/theme tokens must live in `styles.css` to take effect.
 
