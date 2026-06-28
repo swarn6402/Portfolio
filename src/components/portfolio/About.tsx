@@ -21,7 +21,7 @@ export function About() {
             <span className="text-xs font-sans text-bronze uppercase tracking-[0.3em] block mb-4">
               Introduction
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
+            <h2 className="font-sans text-3xl md:text-4xl font-semibold text-charcoal mb-4">
               About
             </h2>
             <motion.div
@@ -40,7 +40,7 @@ export function About() {
             {/* Left Column - Quote */}
             <div className="md:col-span-4">
               <div className="border-l-2 border-bronze/30 pl-6">
-                <p className="font-serif text-xl md:text-2xl text-charcoal/80 italic leading-relaxed">
+                <p className="font-sans text-xl md:text-2xl text-charcoal/80 italic leading-relaxed">
                   "I care about what happens after the code ships."
                 </p>
               </div>
@@ -70,7 +70,7 @@ export function About() {
               {/* Stats */}
               <div className="flex gap-4 sm:gap-8 mt-12 pt-8 border-t border-charcoal/10">
                 <div className="flex-1 min-w-0">
-                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
+                  <span className="block whitespace-nowrap font-sans text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     10+
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
@@ -78,7 +78,7 @@ export function About() {
                   </p>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
+                  <span className="block whitespace-nowrap font-sans text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     40%
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
@@ -86,7 +86,7 @@ export function About() {
                   </p>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="block whitespace-nowrap font-serif text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
+                  <span className="block whitespace-nowrap font-sans text-2xl sm:text-3xl md:text-4xl text-charcoal font-semibold">
                     Both
                   </span>
                   <p className="text-sm text-charcoal/50 mt-1 font-sans">
