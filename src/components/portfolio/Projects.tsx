@@ -9,7 +9,7 @@ const projects = [
     description:
       'Built a full-stack World Cup 2026 hub with live match data, standings, and real-time scores. The interesting part: an automated Telegram pipeline using GramJS that discovers and surfaces stream links without manual curation. Reached 10,000 visitors across 40+ countries organically.',
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-    link: 'https://freefifa.vercel.app/',
+    link: 'https://wc2026.freefa.workers.dev/',
     github: 'https://github.com/swarn6402/freefa',
     featured: true,
   },
@@ -17,7 +17,17 @@ const projects = [
     title: 'Saspirant– Smart Job Alert Platform',
     description:
       'Job hunting is tedious. This platform automates the tedious part. Scrapes 50+ recruitment sites with BeautifulSoup4 and Selenium, matches listings to your profile with AI, and sends personalized alerts via email. Full-stack: React frontend, Flask API, PostgreSQL, deployed on Vercel and Render.',
-    tech: ['React', 'Flask', 'PostgreSQL', 'Google OAuth', 'BeautifulSoup4', 'Selenium', 'SendGrid', 'Vercel', 'Render'],
+    tech: [
+      'React',
+      'Flask',
+      'PostgreSQL',
+      'Google OAuth',
+      'BeautifulSoup4',
+      'Selenium',
+      'SendGrid',
+      'Vercel',
+      'Render',
+    ],
     link: 'https://saspirant.vercel.app/',
     github: 'https://github.com/swarn6402/Saspirant',
     featured: true,
